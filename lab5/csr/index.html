@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Manufacturers List</title>
+        <link href="../assets/style.css" rel="stylesheet" />
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <div class='container' id="contentContainer">
+            <div class='navigation'>
+                <ul>
+                    <li><a id="waterMeterLink" href="#">Лічильники води</a></li>
+                    <li><a id="manufacturerLink" href="#">Виробники</a></li>
+                    <li><a id="propertyLink" href="#">Властивості</a></li>
+                    <li><a id="logoutLink" href="#">Вийти</a></li>
+                </ul>
+            </div>
+            <div class='table-content'>
+                    <h1 id="pageHeader">Виробники</h1>
+                    <table id="dataTable">
+                        
+                    </table>
+            </div>
+            <div class='form-content'>
+                <form method="POST" id="manufacturerForm" class="app-form">
+                    <p><input type="text" id="manufacturerNameInput" placeholder="Назва" name="name" required/></p>
+                    <p><button type="submit">Зберегти</button></p>
+                </form>
+                <form method="POST" id="propertyForm" class="app-form">
+                    <p><input type="text" id="propertyNameInput" placeholder="Назва" name="name" required/></p>
+                    <p><input type="text" id="propertyValuesInput" placeholder="Значення" name="values" required/></p>
+                    <p><button type="submit">Зберегти</button></p>
+                </form>
+                <form method="POST" id="waterMeterForm" class="app-form">
+                    <p><input type="text" id="waterMeterNameInput" placeholder="Модель" name="name" required/></p>
+                    <p><select id="waterMeterManufacturerInput">
+						</select></p>
+                    <p><input type="text" id="waterMeterPriceInput" placeholder="Ціна" name="price" required/></p>
+					<div id="propertyInputContainer">
+						
+					</div>
+                    <p><button type="submit">Зберегти</button></p>
+                </form>
+            </div>
+        </div>
+        <div class='container' id="loginContainer">
+            <div class='form-content'>
+                <h1>Вхід</h1>
+                <form method="POST" id="loginForm">
+                    <p><input type="text" placeholder="Логін" id="loginInput" name="login" required/></p>
+                    <p><input type="password" placeholder="Пароль" id="passwordInput" name="password" required/></p>
+                    <p><button type="submit">Увійти</button></p>
+                    <p id="loginErrorText"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="../assets/main-csr.js"></script>
+</html>
